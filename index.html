@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary SEO Meta Tags -->
-    <title>mememe | בגדים סרוגים בעבודת יד | עיצוב אישי One of a Kind</title>
-    <meta name="title" content="mememe - בגדים סרוגים בעבודת יד בעיצוב אישי | נועם ברק">
-    <meta name="description" content="mememe ★ מותג בגדים סרוגים בעבודת יד ★ עיצוב אישי ייחודי ★ כל פריט הוא One of a Kind ★ סוודרים, טופים ושמלות סרוגות ★ אופנה בת קיימא">
-    <meta name="keywords" content="בגדים סרוגים, סריגה בעבודת יד, סוודר סרוג, טופ סרוג, שמלה סרוגה, בגדים בעבודת יד, אופנה בת קיימא, one of a kind, mememe, נועם ברק, עיצוב אופנה, בגדים ייחודיים, crochet, handmade fashion">
-    <meta name="author" content="נועם ברק - mememe">
+    <title>mememe | Handcrafted Knitwear | One of a Kind Fashion</title>
+    <meta name="title" content="mememe - Handcrafted Knitwear | One of a Kind Fashion">
+    <meta name="description" content="mememe ★ Handcrafted knitwear ★ One of a kind designs ★ Sustainable fashion ★ Custom pieces">
+    <meta name="keywords" content="handmade knitwear, crochet clothing, handcrafted fashion, sustainable fashion, one of a kind, mememe, custom knitwear, artisan clothing">
+    <meta name="author" content="mememe">
     <meta name="robots" content="index, follow">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mememe.co.il">
-    <meta property="og:title" content="mememe - בגדים סרוגים בעבודת יד">
-    <meta property="og:description" content="מותג אופנה ייחודי - כל פריט סרוג בעבודת יד ומעוצב באהבה. One of a kind fashion.">
+    <meta property="og:url" content="https://mememeforever.site">
+    <meta property="og:title" content="mememe - Handcrafted Knitwear">
+    <meta property="og:description" content="One of a kind handcrafted fashion. Each piece is unique.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,13 +68,18 @@
         }
 
         .logo {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 900;
+            font-style: italic;
             letter-spacing: -1px;
             color: var(--primary);
             text-decoration: none;
             transition: all 0.3s ease;
             font-family: 'Heebo', sans-serif;
+        }
+        
+        .logo::after {
+            content: '.';
         }
 
         .nav-links {
@@ -98,7 +103,7 @@
             content: '';
             position: absolute;
             bottom: -5px;
-            right: 0;
+            left: 0;
             width: 0;
             height: 1px;
             background: var(--primary);
@@ -144,12 +149,13 @@
         }
 
         .hero h1 {
-            font-size: 8rem;
+            font-size: 10rem;
             font-weight: 900;
+            font-style: italic;
             color: var(--primary);
             margin-bottom: 2rem;
-            letter-spacing: -3px;
-            line-height: 1;
+            letter-spacing: -5px;
+            line-height: 0.9;
             font-family: 'Heebo', sans-serif;
         }
 
@@ -198,7 +204,7 @@
             background: transparent;
             border: 1px solid var(--primary);
             color: var(--primary);
-            margin-left: 1.5rem;
+            margin-right: 1.5rem;
         }
 
         .secondary-button:hover {
@@ -206,59 +212,30 @@
             color: white;
         }
 
-        /* About Section */
-        .about-section {
-            padding: 10rem 4rem;
-            max-width: 1600px;
+        /* Brand Statement */
+        .brand-statement {
+            padding: 8rem 4rem;
+            max-width: 1200px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8rem;
-            align-items: center;
+            text-align: center;
         }
 
-        .about-image {
-            position: relative;
-            overflow: hidden;
-            aspect-ratio: 3/4;
-            background: var(--secondary);
-        }
-
-        .about-image::before {
-            content: 'IMAGE';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 1rem;
-            color: var(--accent);
-            letter-spacing: 3px;
-            font-weight: 300;
-        }
-
-        .about-content h2 {
-            font-size: 4rem;
+        .brand-statement h2 {
+            font-size: 3rem;
             color: var(--primary);
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             font-weight: 800;
             letter-spacing: -2px;
-            line-height: 1.1;
+            line-height: 1.2;
         }
 
-        .about-content p {
-            font-size: 1.1rem;
+        .brand-statement p {
+            font-size: 1.2rem;
             color: var(--accent);
-            margin-bottom: 2rem;
             line-height: 1.9;
             font-weight: 300;
-        }
-
-        .about-content .signature {
-            font-size: 1.3rem;
-            color: var(--primary);
-            margin-top: 3rem;
-            font-weight: 300;
-            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Features Section */
@@ -380,7 +357,7 @@
         .product-badge {
             position: absolute;
             top: 20px;
-            right: 20px;
+            left: 20px;
             background: var(--primary);
             color: white;
             padding: 0.4rem 1rem;
@@ -513,11 +490,11 @@
 
         .contact-item {
             text-align: center;
-            border-right: 1px solid var(--border);
+            border-left: 1px solid var(--border);
         }
 
-        .contact-item:last-child {
-            border-right: none;
+        .contact-item:first-child {
+            border-left: none;
         }
 
         .contact-item h3 {
@@ -555,7 +532,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 5rem;
-            text-align: right;
+            text-align: left;
         }
 
         .footer-section h3 {
@@ -635,45 +612,43 @@
 
         /* Responsive */
         @media (max-width: 1200px) {
-            .hero h1 { font-size: 6rem; }
-            .about-section { grid-template-columns: 1fr; gap: 4rem; }
+            .hero h1 { font-size: 7rem; }
             .products-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
             nav { padding: 1.2rem 2rem; }
-            .logo { font-size: 1.6rem; }
+            .logo { font-size: 1.8rem; }
             
             .menu-toggle { display: flex; }
             
             .nav-links {
                 position: fixed;
                 top: 75px;
-                right: -100%;
+                left: -100%;
                 background: white;
                 flex-direction: column;
                 width: 100%;
                 padding: 3rem 2rem;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                transition: right 0.3s ease;
+                transition: left 0.3s ease;
                 gap: 2rem;
             }
             
-            .nav-links.active { right: 0; }
+            .nav-links.active { left: 0; }
             
             .hero {
                 padding: 4rem 1.5rem;
                 min-height: 80vh;
             }
             
-            .hero h1 { font-size: 3.5rem; letter-spacing: -1px; }
+            .hero h1 { font-size: 4rem; letter-spacing: -2px; }
             .hero-subtitle { font-size: 0.85rem; letter-spacing: 2px; }
             .hero p { font-size: 1rem; }
             
             .section-title { font-size: 2.5rem; }
-            .about-content h2 { font-size: 2.8rem; }
             
-            .about-section,
+            .brand-statement,
             .features,
             .products-section,
             .instagram-section,
@@ -685,11 +660,11 @@
             .products-grid { grid-template-columns: 1fr; gap: 2rem; }
             .instagram-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
             .contact-info { grid-template-columns: 1fr; gap: 3rem; }
-            .contact-item { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
+            .contact-item { border-left: none; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
             .contact-item:last-child { border-bottom: none; padding-bottom: 0; }
-            .footer-content { grid-template-columns: 1fr; gap: 3rem; }
+            .footer-content { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
             
-            .secondary-button { margin-left: 0; margin-top: 1rem; }
+            .secondary-button { margin-right: 0; margin-bottom: 1rem; display: block; }
         }
     </style>
 </head>
@@ -697,13 +672,12 @@
     <!-- Header -->
     <header id="header">
         <nav>
-            <a href="#home" class="logo">mememe</a>
+            <a href="#home" class="logo">MeMeMe</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">בית</a></li>
-                <li><a href="#about">הסיפור</a></li>
-                <li><a href="#products">קולקציה</a></li>
-                <li><a href="#instagram">גלריה</a></li>
-                <li><a href="#contact">צור קשר</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -717,60 +691,50 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-subtitle">Handcrafted Fashion</div>
-            <h1>mememe</h1>
-            <p>כל פריט הוא יצירת אמנות ייחודית. בגדים סרוגים בעבודת יד עם תשומת לב לפרטים הקטנים. כי אופנה היא לא רק מה שלובשים, אלא גם הסיפור שמאחורי.</p>
+            <h1>MeMeMe.</h1>
+            <p>Each piece is a unique work of art. Handcrafted knitwear with attention to every detail. Because fashion is not just what you wear, but the story behind it.</p>
             <div>
-                <a href="#products" class="cta-button secondary-button">הקולקציה</a>
-                <a href="#contact" class="cta-button">צרו קשר</a>
+                <a href="#collection" class="cta-button secondary-button">View Collection</a>
+                <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="about-image"></div>
-        <div class="about-content">
-            <h2>היי, אני נועם</h2>
-            <p>
-                mememe נולד מתוך אהבה עמוקה לסריגה ולעיצוב אופנה. כל פריט שאני יוצרת הוא תוצאה של שעות של עבודה קפדנית, תשומת לב לכל תפר ותפר, והרבה מאוד אהבה.
-            </p>
-            <p>
-                אני מאמינה שבגדים צריכים לספר סיפור - את הסיפור שלכם. לכן כל פריט הוא one of a kind, ייחודי בדיוק כמוכם. אין שני פריטים זהים, כי כל אחד מכם מיוחד.
-            </p>
-            <p>
-                הסריגה היא לא רק מלאכה עבורי, זו אמנות. אני מקפידה על חומרים איכותיים, צבעים מיוחדים, ועיצובים שמשלבים בין קלאסי למודרני.
-            </p>
-            <div class="signature">— נועם</div>
-        </div>
+    <!-- Brand Statement -->
+    <section class="brand-statement">
+        <h2>One of a Kind</h2>
+        <p>
+            Every piece is handcrafted with meticulous attention to detail. We believe in slow fashion—quality over quantity, sustainability over trends. Each item is unique, just like you. No two pieces are ever the same.
+        </p>
     </section>
 
     <!-- Features Section -->
     <section class="features">
         <div class="features-container">
-            <h2 class="section-title">למה mememe</h2>
+            <h2 class="section-title">Our Philosophy</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-number">01</div>
-                    <h3>One of a Kind</h3>
-                    <p>כל פריט סרוג בעבודת יד ומעוצב במיוחד. אין שני פריטים זהים - הבגד שלך הוא ייחודי בדיוק כמוך.</p>
+                    <h3>Unique Pieces</h3>
+                    <p>Each item is handcrafted and one of a kind. Your piece is as unique as you are, with no duplicates ever made.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-number">02</div>
-                    <h3>אופנה בת קיימא</h3>
-                    <p>אנחנו מאמינים באופנה איטית ואיכותית. כל פריט נוצר במהירות שלו, עם תשומת לב לסביבה ולאיכות.</p>
+                    <h3>Sustainable Fashion</h3>
+                    <p>We believe in slow, quality fashion. Each piece is created with care for the environment and attention to craftsmanship.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-number">03</div>
-                    <h3>עיצוב אישי</h3>
-                    <p>רוצים משהו מיוחד? אפשר להתאים צבעים, מידות ועיצובים בדיוק לפי מה שאתם חולמים עליו.</p>
+                    <h3>Custom Design</h3>
+                    <p>Want something special? We create custom pieces tailored to your vision, from colors to fit to design.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section class="products-section" id="products">
-        <h2 class="section-title">הקולקציה</h2>
+    <section class="products-section" id="collection">
+        <h2 class="section-title">Collection</h2>
         <div class="products-grid">
             <!-- Product 1 -->
             <div class="product-card">
@@ -779,9 +743,9 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Sweater</div>
-                    <h3>סוודר Oversized קרמל</h3>
-                    <p>סוודר אוברסייז רך ונעים, סרוג בעבודת יד עם תבנית ייחודית. מושלם לימים קרירים.</p>
-                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בסוודר%20Oversized%20קרמל" class="contact-button">צרו קשר</a>
+                    <h3>Oversized Caramel Sweater</h3>
+                    <p>Soft oversized sweater, handcrafted with unique pattern. Perfect for cooler days.</p>
+                    <a href="https://wa.me/972504622220?text=Hi,%20I'm%20interested%20in%20the%20Oversized%20Caramel%20Sweater" class="contact-button">Inquire</a>
                 </div>
             </div>
 
@@ -792,9 +756,9 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Top</div>
-                    <h3>טופ קרושה בז'</h3>
-                    <p>טופ קרושה עדין ונשי, מושלם לשכבות או ללבישה יחידה. עיצוב אוורירי וחופשי.</p>
-                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בטופ%20קרושה%20בז'" class="contact-button">צרו קשר</a>
+                    <h3>Beige Crochet Top</h3>
+                    <p>Delicate feminine crochet top, perfect for layering or solo wear. Airy and free design.</p>
+                    <a href="https://wa.me/972504622220?text=Hi,%20I'm%20interested%20in%20the%20Beige%20Crochet%20Top" class="contact-button">Inquire</a>
                 </div>
             </div>
 
@@ -803,9 +767,9 @@
                 <div class="product-image"></div>
                 <div class="product-info">
                     <div class="product-category">Dress</div>
-                    <h3>שמלת מידי וורוד</h3>
-                    <p>שמלה נשית ורומנטית, סרוגה בעבודת יד. אורך מידי, מושלם לכל אירוע מיוחד.</p>
-                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בשמלת%20מידי%20וורוד" class="contact-button">צרו קשר</a>
+                    <h3>Pink Midi Dress</h3>
+                    <p>Feminine romantic dress, handcrafted. Midi length, perfect for any special occasion.</p>
+                    <a href="https://wa.me/972504622220?text=Hi,%20I'm%20interested%20in%20the%20Pink%20Midi%20Dress" class="contact-button">Inquire</a>
                 </div>
             </div>
 
@@ -814,9 +778,9 @@
                 <div class="product-image"></div>
                 <div class="product-info">
                     <div class="product-category">Cardigan</div>
-                    <h3>קרדיגן ארוך שמנת</h3>
-                    <p>קרדיגן ארוך ומחמם, אידיאלי להשלמת כל לוק. סגירה עם כפתורי עץ בעבודת יד.</p>
-                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בקרדיגן%20ארוך%20שמנת" class="contact-button">צרו קשר</a>
+                    <h3>Long Cream Cardigan</h3>
+                    <p>Long warming cardigan, ideal for completing any look. Closure with handmade wooden buttons.</p>
+                    <a href="https://wa.me/972504622220?text=Hi,%20I'm%20interested%20in%20the%20Long%20Cream%20Cardigan" class="contact-button">Inquire</a>
                 </div>
             </div>
 
@@ -827,9 +791,9 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Accessories</div>
-                    <h3>תיק סרוג Tote</h3>
-                    <p>תיק טוט סרוג גדול ומרווח, מושלם ליום יום. חזק ועמיד עם רצועות מחוזקות.</p>
-                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בתיק%20סרוג%20Tote" class="contact-button">צרו קשר</a>
+                    <h3>Crochet Tote Bag</h3>
+                    <p>Large spacious crochet tote, perfect for everyday. Strong and durable with reinforced handles.</p>
+                    <a href="https://wa.me/972504622220?text=Hi,%20I'm%20interested%20in%20the%20Crochet%20Tote%20Bag" class="contact-button">Inquire</a>
                 </div>
             </div>
 
@@ -838,17 +802,17 @@
                 <div class="product-image"></div>
                 <div class="product-info">
                     <div class="product-category">Set</div>
-                    <h3>סט סרוג - טופ ומכנסיים</h3>
-                    <p>סט סרוג מושלם ונוח, כולל טופ קצר ומכנסיים wide. אידיאלי לקיץ או לשכבות.</p>
-                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בסט%20סרוג%20-%20טופ%20ומכנסיים" class="contact-button">צרו קשר</a>
+                    <h3>Crochet Set - Top & Pants</h3>
+                    <p>Perfect comfortable crochet set, includes crop top and wide pants. Ideal for summer or layering.</p>
+                    <a href="https://wa.me/972504622220?text=Hi,%20I'm%20interested%20in%20the%20Crochet%20Set" class="contact-button">Inquire</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Instagram Section -->
-    <section class="instagram-section" id="instagram">
-        <h2 class="section-title">עקבו אחרינו</h2>
+    <section class="instagram-section" id="gallery">
+        <h2 class="section-title">Follow Us</h2>
         <p style="font-size: 1rem; color: var(--accent); margin-bottom: 3rem; letter-spacing: 1px;">@mememeforever_</p>
         <div class="instagram-grid">
             <div class="instagram-item"></div>
@@ -860,15 +824,15 @@
             <div class="instagram-item"></div>
             <div class="instagram-item"></div>
         </div>
-        <a href="https://www.instagram.com/mememeforever_/" target="_blank" class="cta-button" style="margin-top: 2rem;">בקרו באינסטגרם</a>
+        <a href="https://www.instagram.com/mememeforever_/" target="_blank" class="cta-button" style="margin-top: 2rem;">Visit Instagram</a>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="contact-container">
-            <h2 class="section-title">בואו נדבר</h2>
-            <p style="text-align: center; font-size: 1.1rem; color: var(--accent); margin-bottom: 3rem; font-weight: 300;">
-                רוצים להזמין פריט ייחודי? יש לכם שאלות? אשמח לשמוע מכם.
+            <h2 class="section-title">Get in Touch</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--accent); margin-bottom: 3rem; font-weight: 300;">
+                Want to order a unique piece? Have questions? We'd love to hear from you.
             </p>
             
             <div class="contact-info">
@@ -878,7 +842,7 @@
                 </div>
                 <div class="contact-item">
                     <h3>WhatsApp</h3>
-                    <a href="https://wa.me/972504622220">שלחו הודעה</a>
+                    <a href="https://wa.me/972504622220">Message Us</a>
                 </div>
                 <div class="contact-item">
                     <h3>Instagram</h3>
@@ -894,18 +858,18 @@
             <div class="footer-section">
                 <h3>mememe</h3>
                 <p>
-                    מותג אופנה ייחודי המתמחה בבגדים סרוגים בעבודת יד. כל פריט מעוצב ונוצר באהבה.
+                    A unique fashion brand specializing in handcrafted knitwear. Each piece is designed and created with love.
                 </p>
             </div>
             <div class="footer-section">
-                <h3>קישורים</h3>
-                <a href="#about">הסיפור</a>
-                <a href="#products">קולקציה</a>
-                <a href="#instagram">גלריה</a>
-                <a href="#contact">צור קשר</a>
+                <h3>Links</h3>
+                <a href="#home">Home</a>
+                <a href="#collection">Collection</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>עקבו אחרינו</h3>
+                <h3>Follow Us</h3>
                 <div class="social-links">
                     <a href="https://www.instagram.com/mememeforever_/" target="_blank" aria-label="Instagram">IG</a>
                     <a href="https://wa.me/972504622220" target="_blank" aria-label="WhatsApp">WA</a>
@@ -913,7 +877,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>© 2025 mememe by נועם ברק · All Rights Reserved · Handmade with Love</p>
+            <p>© 2025 mememe · All Rights Reserved · Handmade with Love</p>
         </div>
     </footer>
 
