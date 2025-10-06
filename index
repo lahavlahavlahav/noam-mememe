@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>mememe | בגדים סרוגים בעבודת יד | עיצוב אישי One of a Kind</title>
+    <meta name="title" content="mememe - בגדים סרוגים בעבודת יד בעיצוב אישי | נועם ברק">
+    <meta name="description" content="mememe ★ מותג בגדים סרוגים בעבודת יד ★ עיצוב אישי ייחודי ★ כל פריט הוא One of a Kind ★ סוודרים, טופים ושמלות סרוגות ★ אופנה בת קיימא">
+    <meta name="keywords" content="בגדים סרוגים, סריגה בעבודת יד, סוודר סרוג, טופ סרוג, שמלה סרוגה, בגדים בעבודת יד, אופנה בת קיימא, one of a kind, mememe, נועם ברק, עיצוב אופנה, בגדים ייחודיים, crochet, handmade fashion">
+    <meta name="author" content="נועם ברק - mememe">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mememe.co.il">
+    <meta property="og:title" content="mememe - בגדים סרוגים בעבודת יד">
+    <meta property="og:description" content="מותג אופנה ייחודי - כל פריט סרוג בעבודת יד ומעוצב באהבה. One of a kind fashion.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Assistant:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #f5f5f5;
+            --accent: #666;
+            --light: #ffffff;
+            --border: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Assistant', 'Heebo', sans-serif;
+            color: var(--primary);
+            background: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 0;
+            height: 1px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 1px;
+            background: var(--primary);
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 95vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--light);
+            margin-top: 80px;
+            padding: 4rem 2rem;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 2;
+            max-width: 1000px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            letter-spacing: -3px;
+            line-height: 1;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--accent);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 4rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.9;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.4s ease;
+            border: 1px solid var(--primary);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .secondary-button {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            margin-left: 1.5rem;
+        }
+
+        .secondary-button:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 10rem 4rem;
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            background: var(--secondary);
+        }
+
+        .about-image::before {
+            content: 'IMAGE';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1rem;
+            color: var(--accent);
+            letter-spacing: 3px;
+            font-weight: 300;
+        }
+
+        .about-content h2 {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 3rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1.1;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            line-height: 1.9;
+            font-weight: 300;
+        }
+
+        .about-content .signature {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-top: 3rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        /* Features Section */
+        .features {
+            background: var(--secondary);
+            padding: 8rem 4rem;
+        }
+
+        .features-container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 6rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+        }
+
+        .feature-card {
+            background: transparent;
+            padding: 0;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-number {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--primary);
+            opacity: 0.1;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .feature-card p {
+            color: var(--accent);
+            font-size: 1rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 10rem 4rem;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 6rem;
+        }
+
+        .product-card {
+            background: transparent;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.02);
+        }
+
+        .product-image {
+            aspect-ratio: 3/4;
+            background: var(--secondary);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .product-image::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1px;
+            height: 60px;
+            background: var(--border);
+        }
+
+        .product-image::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 0.4rem 1rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            z-index: 2;
+            letter-spacing: 1.5px;
+        }
+
+        .product-info {
+            padding: 2rem 0;
+        }
+
+        .product-category {
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .product-info p {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .contact-button {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 0.7rem 2rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .contact-button:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Instagram Section */
+        .instagram-section {
+            background: var(--light);
+            padding: 8rem 4rem;
+            text-align: center;
+        }
+
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1600px;
+            margin: 4rem auto;
+        }
+
+        .instagram-item {
+            aspect-ratio: 1;
+            background: var(--secondary);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .instagram-item:hover {
+            transform: scale(0.98);
+        }
+
+        .instagram-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1px;
+            height: 40px;
+            background: var(--border);
+        }
+
+        .instagram-item::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 1px;
+            background: var(--border);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 10rem 4rem;
+            background: var(--secondary);
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--light);
+            padding: 6rem 5rem;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+            margin-top: 5rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            border-right: 1px solid var(--border);
+        }
+
+        .contact-item:last-child {
+            border-right: none;
+        }
+
+        .contact-item h3 {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.6;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 5rem 4rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1600px;
+            margin: 0 auto 4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+            text-align: right;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            border-color: white;
+            background: white;
+            color: var(--primary);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 4rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero h1 { font-size: 6rem; }
+            .about-section { grid-template-columns: 1fr; gap: 4rem; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 1.2rem 2rem; }
+            .logo { font-size: 1.6rem; }
+            
+            .menu-toggle { display: flex; }
+            
+            .nav-links {
+                position: fixed;
+                top: 75px;
+                right: -100%;
+                background: white;
+                flex-direction: column;
+                width: 100%;
+                padding: 3rem 2rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+                gap: 2rem;
+            }
+            
+            .nav-links.active { right: 0; }
+            
+            .hero {
+                padding: 4rem 1.5rem;
+                min-height: 80vh;
+            }
+            
+            .hero h1 { font-size: 3.5rem; letter-spacing: -1px; }
+            .hero-subtitle { font-size: 0.85rem; letter-spacing: 2px; }
+            .hero p { font-size: 1rem; }
+            
+            .section-title { font-size: 2.5rem; }
+            .about-content h2 { font-size: 2.8rem; }
+            
+            .about-section,
+            .features,
+            .products-section,
+            .instagram-section,
+            .contact-section {
+                padding: 5rem 1.5rem;
+            }
+            
+            .features-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .products-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .instagram-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .contact-info { grid-template-columns: 1fr; gap: 3rem; }
+            .contact-item { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
+            .contact-item:last-child { border-bottom: none; padding-bottom: 0; }
+            .footer-content { grid-template-columns: 1fr; gap: 3rem; }
+            
+            .secondary-button { margin-left: 0; margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo">mememe</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">בית</a></li>
+                <li><a href="#about">הסיפור</a></li>
+                <li><a href="#products">קולקציה</a></li>
+                <li><a href="#instagram">גלריה</a></li>
+                <li><a href="#contact">צור קשר</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-subtitle">Handcrafted Fashion</div>
+            <h1>mememe</h1>
+            <p>כל פריט הוא יצירת אמנות ייחודית. בגדים סרוגים בעבודת יד עם תשומת לב לפרטים הקטנים. כי אופנה היא לא רק מה שלובשים, אלא גם הסיפור שמאחורי.</p>
+            <div>
+                <a href="#products" class="cta-button secondary-button">הקולקציה</a>
+                <a href="#contact" class="cta-button">צרו קשר</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-image"></div>
+        <div class="about-content">
+            <h2>היי, אני נועם</h2>
+            <p>
+                mememe נולד מתוך אהבה עמוקה לסריגה ולעיצוב אופנה. כל פריט שאני יוצרת הוא תוצאה של שעות של עבודה קפדנית, תשומת לב לכל תפר ותפר, והרבה מאוד אהבה.
+            </p>
+            <p>
+                אני מאמינה שבגדים צריכים לספר סיפור - את הסיפור שלכם. לכן כל פריט הוא one of a kind, ייחודי בדיוק כמוכם. אין שני פריטים זהים, כי כל אחד מכם מיוחד.
+            </p>
+            <p>
+                הסריגה היא לא רק מלאכה עבורי, זו אמנות. אני מקפידה על חומרים איכותיים, צבעים מיוחדים, ועיצובים שמשלבים בין קלאסי למודרני.
+            </p>
+            <div class="signature">— נועם</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2 class="section-title">למה mememe</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>One of a Kind</h3>
+                    <p>כל פריט סרוג בעבודת יד ומעוצב במיוחד. אין שני פריטים זהים - הבגד שלך הוא ייחודי בדיוק כמוך.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>אופנה בת קיימא</h3>
+                    <p>אנחנו מאמינים באופנה איטית ואיכותית. כל פריט נוצר במהירות שלו, עם תשומת לב לסביבה ולאיכות.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>עיצוב אישי</h3>
+                    <p>רוצים משהו מיוחד? אפשר להתאים צבעים, מידות ועיצובים בדיוק לפי מה שאתם חולמים עליו.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <h2 class="section-title">הקולקציה</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Sweater</div>
+                    <h3>סוודר Oversized קרמל</h3>
+                    <p>סוודר אוברסייז רך ונעים, סרוג בעבודת יד עם תבנית ייחודית. מושלם לימים קרירים.</p>
+                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בסוודר%20Oversized%20קרמל" class="contact-button">צרו קשר</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">ONE OF A KIND</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Top</div>
+                    <h3>טופ קרושה בז'</h3>
+                    <p>טופ קרושה עדין ונשי, מושלם לשכבות או ללבישה יחידה. עיצוב אוורירי וחופשי.</p>
+                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בטופ%20קרושה%20בז'" class="contact-button">צרו קשר</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <div class="product-category">Dress</div>
+                    <h3>שמלת מידי וורוד</h3>
+                    <p>שמלה נשית ורומנטית, סרוגה בעבודת יד. אורך מידי, מושלם לכל אירוע מיוחד.</p>
+                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בשמלת%20מידי%20וורוד" class="contact-button">צרו קשר</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <div class="product-category">Cardigan</div>
+                    <h3>קרדיגן ארוך שמנת</h3>
+                    <p>קרדיגן ארוך ומחמם, אידיאלי להשלמת כל לוק. סגירה עם כפתורי עץ בעבודת יד.</p>
+                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בקרדיגן%20ארוך%20שמנת" class="contact-button">צרו קשר</a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">LIMITED</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Accessories</div>
+                    <h3>תיק סרוג Tote</h3>
+                    <p>תיק טוט סרוג גדול ומרווח, מושלם ליום יום. חזק ועמיד עם רצועות מחוזקות.</p>
+                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בתיק%20סרוג%20Tote" class="contact-button">צרו קשר</a>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <div class="product-category">Set</div>
+                    <h3>סט סרוג - טופ ומכנסיים</h3>
+                    <p>סט סרוג מושלם ונוח, כולל טופ קצר ומכנסיים wide. אידיאלי לקיץ או לשכבות.</p>
+                    <a href="https://wa.me/972504622220?text=היי%20נועם,%20אני%20מעוניינ/ת%20בסט%20סרוג%20-%20טופ%20ומכנסיים" class="contact-button">צרו קשר</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section" id="instagram">
+        <h2 class="section-title">עקבו אחרינו</h2>
+        <p style="font-size: 1rem; color: var(--accent); margin-bottom: 3rem; letter-spacing: 1px;">@mememeforever_</p>
+        <div class="instagram-grid">
+            <div class="instagram-item"></div>
+            <div class="instagram-item"></div>
+            <div class="instagram-item"></div>
+            <div class="instagram-item"></div>
+            <div class="instagram-item"></div>
+            <div class="instagram-item"></div>
+            <div class="instagram-item"></div>
+            <div class="instagram-item"></div>
+        </div>
+        <a href="https://www.instagram.com/mememeforever_/" target="_blank" class="cta-button" style="margin-top: 2rem;">בקרו באינסטגרם</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">בואו נדבר</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: var(--accent); margin-bottom: 3rem; font-weight: 300;">
+                רוצים להזמין פריט ייחודי? יש לכם שאלות? אשמח לשמוע מכם.
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <a href="tel:+972504622220">050-462-2220</a>
+                </div>
+                <div class="contact-item">
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/972504622220">שלחו הודעה</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Instagram</h3>
+                    <a href="https://www.instagram.com/mememeforever_/" target="_blank">@mememeforever_</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>mememe</h3>
+                <p>
+                    מותג אופנה ייחודי המתמחה בבגדים סרוגים בעבודת יד. כל פריט מעוצב ונוצר באהבה.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>קישורים</h3>
+                <a href="#about">הסיפור</a>
+                <a href="#products">קולקציה</a>
+                <a href="#instagram">גלריה</a>
+                <a href="#contact">צור קשר</a>
+            </div>
+            <div class="footer-section">
+                <h3>עקבו אחרינו</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/mememeforever_/" target="_blank" aria-label="Instagram">IG</a>
+                    <a href="https://wa.me/972504622220" target="_blank" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 mememe by נועם ברק · All Rights Reserved · Handmade with Love</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card, .feature-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
